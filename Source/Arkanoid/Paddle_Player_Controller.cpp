@@ -24,7 +24,7 @@ void APaddle_Player_Controller::BeginPlay()
 	SetViewTarget(CameraActors[0], Params);
 
 	SpawnNewBrick();
-
+	int a = 0;
 	SpawnNewBall();
 	/*int a = 0;
 	UE_LOG(LogTemp, Warning, TEXT("Hello World!"));*/
@@ -72,12 +72,15 @@ void APaddle_Player_Controller::SpawnNewBall()
 
 void APaddle_Player_Controller::SpawnNewBrick()
 {
-	if (!MyBrick) {
-		MyBrick = nullptr;
-	}
-
+	//if (!MyBrick) {
+		//MyBrick = nullptr;
+	//}
+	
 	if (BrickObj) {
 		MyBrick = GetWorld()->SpawnActor<ABrick>(BrickObj, SpawnLocation1, SpawnRotation1, SpawnInfo1);
 	}
 
+	if (BrickObj) {
+		MyBrick = GetWorld()->SpawnActor<ABrick>(BrickObj, SpawnLocation2, SpawnRotation1, SpawnInfo1);
+	}
 }

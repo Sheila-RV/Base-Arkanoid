@@ -37,7 +37,8 @@ protected:
 		TSubclassOf<ABrick> BrickObj;
 
 	ABrick* MyBrick;
-	FVector SpawnLocation1 = FVector(10.0f, 0.0f, 10.0f);
+	FVector SpawnLocation1 = FVector(-60.0f, 0.0f, 300.0f);
+	FVector SpawnLocation2 = FVector(-60.0f, 0.0f, 150.0f);
 	FRotator SpawnRotation1 = FRotator(0.0f, 0.0f, 0.0f);
 	FActorSpawnParameters SpawnInfo1;
 
